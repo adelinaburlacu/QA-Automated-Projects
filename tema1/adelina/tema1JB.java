@@ -1,3 +1,5 @@
+package tema1.adelina;
+
 import java.util.Scanner;
 
 public class tema1JB {
