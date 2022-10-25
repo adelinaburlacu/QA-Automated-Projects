@@ -57,9 +57,45 @@ public class temaSelenium1Acasa {
         System.out.println(inlineExplanation.getText());
         System.out.println("");
 
-        //domAtributte
+        //paragrapgWithAtributte
         WebElement paragraph3 = driver.findElement(By.cssSelector("#domattributes"));
         System.out.println(paragraph3.getText());
+        System.out.println("");
+
+        //subtitle2
+        WebElement subtitle2 = driver.findElement(By.cssSelector("body > div:nth-child(1) > h2:nth-child(9)"));
+        System.out.println(subtitle2.getText());
+        System.out.println("");
+
+        //inlime-explanation2
+        WebElement inlineExplanation2 = driver.findElement(By.cssSelector("body > div:nth-child(1) > p:nth-child(11)"));
+        System.out.println(inlineExplanation2.getText());
+        System.out.println("");
+
+        //paragrapgWithDynamicAttributes
+        WebElement paragraph4 = driver.findElement(By.cssSelector("#jsattributes"));
+        System.out.println(paragraph4.getText());
+        System.out.println("");
+
+        //AddAnotherAttributeButton
+        driver.findElement(By.cssSelector(".styled-click-button")).click();
+
+//A treia pagina din tema
+
+        driver.get("https://testpages.herokuapp.com/styled/find-by-playground-test.html");
+        //title3
+        WebElement title3 = driver.findElement(By.cssSelector("div[class='page-body'] h1"));
+        System.out.println(title3.getText());
+        System.out.println("");
+
+        //explanation3
+        WebElement explanation3 = driver.findElement(By.xpath("//div[@class='explanation']"));
+        System.out.println(explanation3.getText());
+        System.out.println("");
+
+        //body - div1 - prima metoda de localizare
+        WebElement body = driver.findElement(By.cssSelector("#div1"));
+        System.out.println(body.getText());
         System.out.println("");
 
         //
