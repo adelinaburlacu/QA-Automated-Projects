@@ -1,5 +1,3 @@
-package skillbrain;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -98,7 +96,7 @@ public class temaSelenium1Acasa {
         System.out.println(body.getText());
         System.out.println("");
 
-        //each paragraph - a doua metoda
+//each paragraph - a doua metoda
         WebElement para1 = driver.findElement(By.cssSelector("#p1"));
         System.out.println(para1.getText());
         System.out.println("");
@@ -311,6 +309,7 @@ public class temaSelenium1Acasa {
         WebElement lastParagraph = driver.findElement(By.xpath("//pre[@id='pre1']"));
         System.out.println(lastParagraph.getText());
         System.out.println("");
+
 
 
 
