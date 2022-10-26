@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
+
 import static java.lang.Thread.sleep;
 
 public class temaSelenium1Acasa {
@@ -96,7 +98,7 @@ public class temaSelenium1Acasa {
         System.out.println(body.getText());
         System.out.println("");
 
-//each paragraph - a doua metoda
+        //each paragraph - a doua metoda
         WebElement para1 = driver.findElement(By.cssSelector("#p1"));
         System.out.println(para1.getText());
         System.out.println("");
@@ -310,6 +312,107 @@ public class temaSelenium1Acasa {
         System.out.println(lastParagraph.getText());
         System.out.println("");
 
+        //click Links
+        driver.findElement(By.xpath("//a[@id='a26']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a27']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a28']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a29']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a30']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a31']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a32']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a33']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a34']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a35']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a36']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a37']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a38']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a39']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a40']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a41']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a42']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a43']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a44']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a45']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a46']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a47']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a48']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a49']")).click();
+        sleep(3000);
+        driver.findElement(By.xpath("//a[@id='a50']")).click();
+        sleep(3000);
+
+//A patra pagina din tema
+
+        driver.get("https://testpages.herokuapp.com/styled/tag/table.html");
+        //title4
+        WebElement title4 = driver.findElement(By.cssSelector("div[class='page-body'] h1"));
+        System.out.println(title4.getText());
+        System.out.println("");
+
+        //explanation4
+        WebElement explanation4 = driver.findElement(By.cssSelector("th"));
+        System.out.println(explanation4.getText());
+        System.out.println("");
+
+        //title table
+        WebElement titleTable = driver.findElement(By.cssSelector("table[id='mytable'] caption"));
+        System.out.println(titleTable.getText());
+        System.out.println("");
+
+        //select table rows and columns
+        List<WebElement> tableRows = driver.findElements(By.cssSelector("#tablehere table tr"));
+
+        WebElement firstRow = tableRows.get(0);
+        List<WebElement> firstRowColumns = firstRow.findElements(By.cssSelector("th"));
+        System.out.println("Header din prima coloana: " + firstRowColumns.get(0).getText());
+        System.out.println("Header din a doua coloana: " + firstRowColumns.get(1).getText());
+        System.out.println("");
+
+        WebElement secondRow = tableRows.get(1);
+        List<WebElement> secondRowColumns = secondRow.findElements(By.cssSelector("td"));
+        System.out.println("Text din randul 2, coloana 1: " + secondRowColumns.get(0).getText());
+        System.out.println("Textul din randul 2, coloana 2: " + secondRowColumns.get(1).getText());
+        System.out.println("");
+
+        WebElement thirdRow = tableRows.get(2);
+        List<WebElement> thirdRowColumns = thirdRow.findElements(By.cssSelector("td"));
+        System.out.println("Textul din randul 3, coloana 1: " + thirdRowColumns.get(0).getText());
+        System.out.println("Textul din randul 3, coloana 2: " +thirdRowColumns.get(1).getText());
+        System.out.println("");
+
+        WebElement fourthRow = tableRows.get(3);
+        List<WebElement> fourthRowColumns = fourthRow.findElements(By.cssSelector("td"));
+        System.out.println("Textul din randul 3, coloana 1: " + fourthRowColumns.get(0).getText());
+        System.out.println("Textul din randul 3, coloana 2: " + fourthRowColumns.get(1).getText());
+        System.out.println("");
+
+        WebElement fifthRow = tableRows.get(4);
+        List<WebElement> fifthRowColumns = fifthRow.findElements(By.cssSelector("td"));
+        System.out.println("Textul din randul 3, coloana 1: " + fifthRowColumns.get(0).getText());
+        System.out.println("Textul din randul 3, coloana 2: " + fifthRowColumns.get(1).getText());
 
 
 
