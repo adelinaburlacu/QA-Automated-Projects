@@ -200,11 +200,12 @@ public class temaSelenium1Acasa {
         System.out.println("");
 
         //the first paragraph and the other paragraphs
-        WebElement para1A = driver.findElement(By.cssSelector("#p1"));
+        WebElement para1A = driver.findElement(By.cssSelector("#p26"));
         System.out.println(para1A.getText());
         System.out.println("");
-
-        WebElement otherParagraphs = driver.findElement(By.cssSelector(""));
+        WebElement otherParagraphs = driver.findElement(By.cssSelector("#div3"));
+        System.out.println(otherParagraphs.getText());
+        System.out.println("");
 
 
 
