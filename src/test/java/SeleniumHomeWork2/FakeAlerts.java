@@ -9,7 +9,7 @@ import static SeleniumHomeWork2.AlertTestsHomeWork.isAlertOpened;
 
 public class FakeAlerts {
     public static void main(String[] args) {
-        //firstFakeAlert();
+        firstFakeAlert();
         secondFakeAlert();
     }
 
