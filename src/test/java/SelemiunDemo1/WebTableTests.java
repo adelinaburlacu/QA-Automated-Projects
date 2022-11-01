@@ -1,6 +1,6 @@
-package tests;
+package SelemiunDemo1;
 
-import driver.WebDriverManager;
+import SelemiunDemo1.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

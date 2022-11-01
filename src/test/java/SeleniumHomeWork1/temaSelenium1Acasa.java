@@ -1,4 +1,4 @@
-package skillbrain;
+package SeleniumHomeWork1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
