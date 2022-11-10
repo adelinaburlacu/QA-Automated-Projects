@@ -4,12 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
+
 import static java.lang.Thread.sleep;
 
 public class temaSelenium1Acasa {
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver" , "Selenium1Demo/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver" , "src/test/java/SeleniumHomeWork1/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://testpages.herokuapp.com/styled/basic-web-page-test.html");
 //Prima pagina din tema
